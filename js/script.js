@@ -5,16 +5,13 @@ const user = Math.floor(Math.random() * 7);
 const pc = Math.floor(Math.random() * 7);
 console.log('user' + user + 'pc' + pc);
 
-if (user == pc) {
-    console.log('Pareggio');
-}
-
-if (user !== pc) {
-    if (user > pc) {
-        console.log('user vince');
-    } else {
-        console.log('Pc vince');
-    }
+//if per paragonare i valori
+if (user > pc) {
+    console.log('user vince');
+} else if (pc > user) {
+    console.log('pc vince');
+} else {
+    console.log('pareggio');
 }
 
 
@@ -33,14 +30,10 @@ console.log(interi[userA]);
 console.log(interi[pcA]);
 
 //if per paragonare i valori
-if (userA == pcA) {
-    console.log('Pareggio array');
-}
-
-if (userA !== pcA) {
-    if (userA > pcA) {
-        console.log('user array vince');
-    } else {
-        console.log('Pc array vince');
-    }
+if (userA > pcA) {
+    console.log('user array vince');
+} else if (pcA > userA) {
+    console.log('pc array vince');
+} else {
+    console.log('pareggio');
 }
